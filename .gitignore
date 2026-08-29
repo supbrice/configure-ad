@@ -1,0 +1,6 @@
+# Operator-generated lab output
+*.csv
+*.log
+*.clixml
+local.settings.ps1
+secrets/
