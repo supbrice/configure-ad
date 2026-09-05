@@ -14,7 +14,7 @@
     The point is the questions, not a red score.
 
 .NOTES
-    Author : Ngu Brice Che (github.com/supbrice)
+    Author : Brice (github.com/supbrice)
 #>
 [CmdletBinding()]
 param(

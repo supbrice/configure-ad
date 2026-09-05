@@ -9,7 +9,7 @@
     the ActiveDirectory module. Prints one-time passwords to the console
     and does not write them to disk.
 
-    Author : Ngu Brice Che (github.com/supbrice)
+    Author : Brice (github.com/supbrice)
 #>
 [CmdletBinding(SupportsShouldProcess)]
 param(
@@ -133,14 +133,14 @@ if (Get-Module GroupPolicy -ListAvailable) {
     $gpoName = 'Lab-LegalNotice'
     $gpo = Get-GPO -Name $gpoName -ErrorAction SilentlyContinue
     if (-not $gpo) {
-        $gpo = New-GPO -Name $gpoName -Comment 'Portfolio lab logon banner — Ngu Brice Che'
+        $gpo = New-GPO -Name $gpoName -Comment 'Portfolio lab logon banner — Brice'
         Set-GPRegistryValue -Name $gpoName `
             -Key 'HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System' `
             -ValueName 'LegalNoticeCaption' -Type String -Value 'bricelab.local portfolio lab'
         Set-GPRegistryValue -Name $gpoName `
             -Key 'HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System' `
             -ValueName 'LegalNoticeText' -Type String `
-            -Value 'This is a personal AD DS lab for Ngu Brice Che. Not a production domain. Not affiliated with Microsoft or nVent.'
+            -Value 'This is a personal AD DS lab for Brice. Not a production domain. Not affiliated with Microsoft or nVent.'
         New-GPLink -Name $gpoName -Target $corp.DistinguishedName -ErrorAction SilentlyContinue | Out-Null
     }
 }

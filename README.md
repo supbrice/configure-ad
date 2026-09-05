@@ -1,6 +1,6 @@
 # Hybrid Identity Lab: On-Premises AD DS on Azure VMs
 
-**Author:** Ngu Brice Che ([GitHub @supbrice](https://github.com/supbrice) · [LinkedIn](https://www.linkedin.com/in/ngubriceche))
+**Author:** Brice ([GitHub @supbrice](https://github.com/supbrice) · [LinkedIn](https://www.linkedin.com/in/ngubriceche))
 
 Portfolio lab that stands up a small **on-premises Active Directory Domain Services** forest on **Azure virtual machines**, then treats that forest as the source of identity for a hybrid Microsoft Entra ID design.
 
@@ -386,6 +386,6 @@ Each script has comment-based help (`Get-Help .\script.ps1 -Full`).
 
 ## Attribution
 
-- **Lab author:** Ngu Brice Che ([@supbrice](https://github.com/supbrice)).
+- **Lab author:** Brice ([@supbrice](https://github.com/supbrice)).
 - **History:** Forked from a public “configure AD on Azure” tutorial skeleton. The original README was unfinished placeholder text. This tree is a rewrite, not a Microsoft sample and not an official nVent project.
 - **License:** MIT — see [LICENSE](LICENSE).

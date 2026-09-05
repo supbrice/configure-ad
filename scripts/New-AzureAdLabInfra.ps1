@@ -1,7 +1,7 @@
 #Requires -Version 5.1
 <#
 .SYNOPSIS
-    Deploys Ngu Brice Che's hybrid AD DS lab landing zone in Azure.
+    Deploys Brice's hybrid AD DS lab landing zone in Azure.
 
 .DESCRIPTION
     Creates rg-bricelab-hybridid, a single VNet/subnet, an NSG that allows RDP
@@ -17,7 +17,7 @@
     This is a portfolio lab, not a production landing zone.
 
 .NOTES
-    Author : Ngu Brice Che (github.com/supbrice)
+    Author : Brice (github.com/supbrice)
     Lab    : bricelab.local hybrid identity
 #>
 [CmdletBinding(SupportsShouldProcess)]

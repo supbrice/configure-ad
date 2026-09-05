@@ -6,7 +6,7 @@
 
 .DESCRIPTION
     Installs the AD DS role and runs Install-ADDSForest. Intended for vm-dc01
-    in Ngu Brice Che's hybrid identity portfolio lab.
+    in Brice's hybrid identity portfolio lab.
 
     The server will reboot. After reboot, sign in as BRICELAB\<local-admin>
     and run New-LabIdentityBaseline.ps1.
@@ -14,7 +14,7 @@
     Portfolio lab only — a single DC is not a production forest.
 
 .NOTES
-    Author : Ngu Brice Che (github.com/supbrice)
+    Author : Brice (github.com/supbrice)
 #>
 [CmdletBinding(SupportsShouldProcess)]
 param(
